@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GreenLeaf AI Recipe Generator</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
+  <div class="doodle-background">
+    <div class="doodle doodle-1">🥑</div>
+    <div class="doodle doodle-2">🍅</div>
+    <div class="doodle doodle-3">🍋</div>
+    <div class="doodle doodle-4">🥕</div>
+    <div class="doodle doodle-5">🍄</div>
+  </div>
+
   <header>
     <h1>GreenLeaf Kitchen</h1>
     <h3>AI-powered personalized recipes!</h3>
@@ -29,17 +40,17 @@
           <option value="mediterranean">Mediterranean</option>
           <option value="thai">Thai</option>
         </select>
-        
 
         <label for="diet">Dietary Preference:</label>
         <select id="diet">
           <option value="">Select...</option>
-          <option value="vegan">Vegan</option>
           <option value="vegetarian">Vegetarian</option>
+          <option value="non-vegetarian">Non-Vegetarian</option>
+          <option value="vegan">Vegan</option>
           <option value="keto">Keto</option>
         </select>
 
-        <button type="submit">Generate Recipe</button>
+        <button type="submit">Generate Recipe <i class="fas fa-utensils"></i></button>
       </form>
 
       <div id="recipe-output" class="recipe-card">
@@ -48,18 +59,20 @@
         </h3>
         <ul id="recipe-steps"></ul>
       </div>
-      
-      <footer class="footer">
-        <p>&copy; 2025 GreenLeaf Kitchen</p>
-        <div class="social-links">
-          <span>Follow us:</span>
-          <a href="https://instagram.com" target="_blank" class="social-icon">📸</a>
-          <a href="https://facebook.com" target="_blank" class="social-icon">📘</a>
-          <a href="https://twitter.com" target="_blank" class="social-icon">🐦</a>
-        </div>
-      </footer>
-      
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 GreenLeaf Kitchen</p>
+    <div class="social-links">
+      <span>Follow us:</span>
+      <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
